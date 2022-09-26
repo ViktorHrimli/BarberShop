@@ -3,18 +3,8 @@ import { Header } from './Header/Header';
 import { About } from './About/About';
 import { Price } from './Price/Price';
 import { Stats } from './Stat/Stat';
-import mobile from './img/Mobile.jpg';
-import logo from './img/Logo.jpg';
-import heroTab from './img/HeroTab.jpg';
-import desk from './img/DesktopHero.jpg';
-import firstTable from './img/About_one_tablet.jpg';
-import secondTable from './img/About_sec_tablet.jpg';
-import cardOne from './img/About_desktop_fir.jpg';
-import cardSec from './img/About_desktop_sec.jpg';
-import priceMob from './img/priceMobile.jpg';
-import priceTablet from './img/PriceTablet.png';
-import priceDeskt from './img/destopPrice.jpg';
-
+import { Masters } from './Masters/Masters';
+import { card } from 'components';
 export const BarberShop = () => {
   return (
     <Box
@@ -23,15 +13,35 @@ export const BarberShop = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Header mobile={mobile} logo={logo} tablet={heroTab} desktop={desk} />
-      <About
-        first={firstTable}
-        second={secondTable}
-        desk={cardOne}
-        deskSec={cardSec}
+      <Header
+        mobile={card.mobile}
+        logo={card.logo}
+        tablet={card.heroTab}
+        desktop={card.desk}
       />
-      <Price mob={priceMob} tab={priceTablet} desk={priceDeskt} />
+      <About
+        first={card.firstTable}
+        second={card.secondTable}
+        desk={card.cardOne}
+        deskSec={card.cardSec}
+      />
+      <Price
+        mob={card.priceMob}
+        tab={card.priceTablet}
+        desk={card.priceDeskt}
+      />
       <Stats />
+      <Masters
+        mob1={card.fmm}
+        mob2={card.smm}
+        mob3={card.tmm}
+        tab1={card.ftm}
+        tab2={card.stm}
+        tab3={card.ttm}
+        desk1={card.fdm}
+        desk2={card.sdm}
+        desk3={card.tdm}
+      />
     </Box>
   );
 };
