@@ -1,10 +1,10 @@
 export const theme = {
   colors: {
-    black: '#000',
+    black: '#303030;',
     white: '#fff',
     text: '#9DA4BD;',
     background: '#f7f7f7',
-    primary: 'green',
+    primary: '#555555',
     secondary: 'rgba(157, 164, 189, 0.6)',
     accent: '#FF6C00',
     muted: 'red',
@@ -21,9 +21,12 @@ export const theme = {
     m: '16px',
     xsm: '18px',
     sm: '24px',
+    lx: '28px',
     l: '32px',
+    slm: '42px',
     lm: '48px',
     xl: '64px',
+    xxl: '72px',
   },
   fontWeights: {
     normal: 400,

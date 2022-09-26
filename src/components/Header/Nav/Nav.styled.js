@@ -9,7 +9,9 @@ export const ListNav = styled.ul`
     display: none;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 20px;
+    grid-gap: ${p => p.theme.space[7]}px;
+
+    margin-left: 40px;
   }
 `;
 

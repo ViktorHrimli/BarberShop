@@ -8,7 +8,7 @@ export const Bar = () => {
       alignItems="center"
       flexDirection="column"
       mb={[0, 90]}
-      ml={[0, 45]}
+      ml={[0, 45, 65]}
     >
       <BarLogo />
       <BarList>

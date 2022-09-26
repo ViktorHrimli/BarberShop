@@ -16,7 +16,7 @@ export const HeaderStyle = styled.header`
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 576px;
-    height: 680px;
+    height: 690px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: 40px;
@@ -24,6 +24,7 @@ export const HeaderStyle = styled.header`
   }
   @media screen and (min-width: 1280px) {
     width: 1068px;
+    height: 680px;
     background-image: url(${p => p.desktop});
     margin-left: auto;
     margin-right: 40px;
@@ -46,7 +47,7 @@ export const LogoImg = styled(FaBtc)`
   }
 `;
 
-export const IconsStyle = styled(BiListUl)`
+export const ButtonStyle = styled(BiListUl)`
   display: inline-flex;
   margin-left: auto;
   margin-bottom: auto;

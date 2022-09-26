@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: ${theme.fonts.heading};
+  color: ${theme.colors.white};
 }
 h1,h2,h3 {
   padding: 0%;
@@ -26,6 +27,11 @@ h1,h2,h3 {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 ul, li {

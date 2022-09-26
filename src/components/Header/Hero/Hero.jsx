@@ -13,18 +13,17 @@ export const Hero = () => {
         display="flex"
         alignItems="center"
         justifyContent="flex-start"
-        mt={[100, 150]}
-        pl={[0, 40]}
+        mt={[100, 150, 200]}
+        pl={[0, 40, 80]}
       >
         <BorderLine></BorderLine>
         <HeaderText>A HAIR SALON FOR MAN IN KYIV</HeaderText>
       </Box>
-      <Box pl={[0, 40]}>
+      <Box pl={[0, 40, 80]} mt={[20, 20, 20]}>
         <HeaderTitle>BarberShop</HeaderTitle>
         <HeaderTitleText>
-          Мы эксперты в модных мужских
-          <br /> стрижках. Работаем быстро,
-          <br /> осторожно и со вкусом.
+          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
+          вкусом.
         </HeaderTitleText>
       </Box>
     </div>

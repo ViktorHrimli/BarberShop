@@ -1,4 +1,4 @@
-import { HeaderStyle, IconsStyle, LogoImg } from './Header.styled';
+import { HeaderStyle, ButtonStyle, LogoImg } from './Header.styled';
 import { Nav } from './Nav/Nav';
 import { Hero } from './Hero/Hero';
 import { Box } from 'CommonStyle/Common.styled';
@@ -8,7 +8,7 @@ export const Header = ({ mobile, logo, tablet, desktop }) => {
     <Box display="flex" alignItems="flex-end" width={[480, 768, 1280]}>
       <Bar />
       <HeaderStyle mobile={mobile} tablet={tablet} desktop={desktop}>
-        <Box px={[40, 15]} py={[40]}>
+        <Box px={[40, 15, 0]} py={[40]}>
           <Box
             width={[400, 550, 1070]}
             display="flex"
@@ -17,7 +17,7 @@ export const Header = ({ mobile, logo, tablet, desktop }) => {
           >
             <Nav />
             <LogoImg></LogoImg>
-            <IconsStyle type="button">Burger</IconsStyle>
+            <ButtonStyle type="button">Burger</ButtonStyle>
           </Box>
           <Hero />
         </Box>

@@ -3,7 +3,7 @@ import { ListNav, TextNav, ButtonNav } from './Nav.styled';
 
 export const Nav = () => {
   return (
-    <Box display="flex" mt={[0, 13]} gridGap={[0, 55]} alignItems="baseline">
+    <Box display="flex" mt={[0, 13]} gridGap={[0, 55, 0]} alignItems="baseline">
       <Box>
         <ListNav>
           <li>
@@ -20,7 +20,13 @@ export const Nav = () => {
           </li>
         </ListNav>
       </Box>
-      <Box display="flex" flexDirection={['column']} alignItems="center">
+      <Box
+        display="flex"
+        flexDirection={['row', 'column', 'row-reverse']}
+        ml={[0, 0, 258]}
+        gridGap={[0, 20, 40]}
+        alignItems="center"
+      >
         <ButtonNav>Онлайн-запись</ButtonNav>
         <TextNav>+38 044 111 11 11</TextNav>
       </Box>
