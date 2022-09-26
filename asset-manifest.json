@@ -1,23 +1,31 @@
 {
   "files": {
     "main.css": "/BarberShop/static/css/main.7acaea2f.css",
-    "main.js": "/BarberShop/static/js/main.444a950e.js",
+    "main.js": "/BarberShop/static/js/main.7c9a9d1e.js",
     "static/media/PriceTablet.png": "/BarberShop/static/media/PriceTablet.9ad31f84fb1feedacaef.png",
     "static/media/DesktopHero.jpg": "/BarberShop/static/media/DesktopHero.c2f0c7e56a2741f8340e.jpg",
     "static/media/destopPrice.jpg": "/BarberShop/static/media/destopPrice.1e6118295b262dc1d015.jpg",
     "static/media/HeroTab.jpg": "/BarberShop/static/media/HeroTab.25b3122ab811a4db9128.jpg",
+    "static/media/MasterFirsTab.jpg": "/BarberShop/static/media/MasterFirsTab.c8956e34ef8729312ac7.jpg",
     "static/media/Mobile.jpg": "/BarberShop/static/media/Mobile.e7350cc59789205ad9ef.jpg",
+    "static/media/MasterFirsMob.jpg": "/BarberShop/static/media/MasterFirsMob.c90c61486136abdc29ee.jpg",
     "static/media/About_desktop_sec.jpg": "/BarberShop/static/media/About_desktop_sec.c3fee3857773ac1eb933.jpg",
+    "static/media/MasterSecMob.jpg": "/BarberShop/static/media/MasterSecMob.fd244afd37bf18cecb9a.jpg",
+    "static/media/MFD.jpg": "/BarberShop/static/media/MFD.58aa5050a496b1cbb975.jpg",
+    "static/media/MThreeTab.jpg": "/BarberShop/static/media/MThreeTab.ac170713d358efea9a18.jpg",
+    "static/media/MSD.jpg": "/BarberShop/static/media/MSD.5c19a848b2d219759b5e.jpg",
+    "static/media/MasterThreeMob.jpg": "/BarberShop/static/media/MasterThreeMob.5a7461fa154144ffff3d.jpg",
     "static/media/priceMobile.jpg": "/BarberShop/static/media/priceMobile.7f6c2333aa931dc799d3.jpg",
+    "static/media/MTD.jpg": "/BarberShop/static/media/MTD.1102bd3cb4b1369d2de8.jpg",
     "static/media/About_one_tablet.jpg": "/BarberShop/static/media/About_one_tablet.b0ddd90af03a720a9fc2.jpg",
     "static/media/About_desktop_fir.jpg": "/BarberShop/static/media/About_desktop_fir.bf19ed5f65f6b8d0dee4.jpg",
     "static/media/About_sec_tablet.jpg": "/BarberShop/static/media/About_sec_tablet.e81d2c8c43c2b6e65bc9.jpg",
     "index.html": "/BarberShop/index.html",
     "main.7acaea2f.css.map": "/BarberShop/static/css/main.7acaea2f.css.map",
-    "main.444a950e.js.map": "/BarberShop/static/js/main.444a950e.js.map"
+    "main.7c9a9d1e.js.map": "/BarberShop/static/js/main.7c9a9d1e.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.444a950e.js"
+    "static/js/main.7c9a9d1e.js"
   ]
 }
