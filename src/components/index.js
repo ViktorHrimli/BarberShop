@@ -9,15 +9,9 @@ import cardSec from './img/About_desktop_sec.jpg';
 import priceMob from './img/priceMobile.jpg';
 import priceTablet from './img/PriceTablet.png';
 import priceDeskt from './img/destopPrice.jpg';
-import fmm from './img/MasterFirsMob.jpg';
-import smm from './img/MasterSecMob.jpg';
-import tmm from './img/MasterThreeMob.jpg';
-import ftm from './img/MasterFirsTab.jpg';
-import stm from './img/About_sec_tablet.jpg';
-import ttm from './img/MThreeTab.jpg';
-import fdm from './img/MFD.jpg';
-import sdm from './img/MSD.jpg';
-import tdm from './img/MTD.jpg';
+import GMF from './img/GMF.jpg';
+import GTF from './img/GTF.jpg';
+import GDF from './img/GDF.jpg';
 
 export const card = {
   mobile,
@@ -31,13 +25,7 @@ export const card = {
   priceMob,
   priceTablet,
   priceDeskt,
-  fmm,
-  smm,
-  tmm,
-  ftm,
-  stm,
-  ttm,
-  fdm,
-  sdm,
-  tdm,
+  GDF,
+  GMF,
+  GTF,
 };

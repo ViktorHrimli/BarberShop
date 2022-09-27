@@ -1,3 +1,4 @@
+import Media from 'react-media';
 import { Box } from 'CommonStyle/Common.styled';
 import {
   BorderLineAbout,
@@ -7,7 +8,6 @@ import {
   ButtonAbout,
   AboutText,
   ImgAbout,
-  ImgAboutDesktop,
 } from './About.styled';
 
 export const About = ({ first, second, desk, deskSec }) => {
@@ -21,18 +21,40 @@ export const About = ({ first, second, desk, deskSec }) => {
       py={[84, 100, 139]}
       gridGap={[0, 40]}
     >
-      <Box
-        display="flex"
-        flexDirection={['column', 'column', 'row']}
-        alignItems="center"
-        width={[0, 330, 550]}
-        gridGap={[0, 20]}
-      >
-        <ImgAbout src={first} alt="" />
-        <ImgAbout src={second} alt="" />
-        <ImgAboutDesktop src={desk} alt="" />
-        <ImgAboutDesktop src={deskSec} alt="" />
-      </Box>
+      <Media
+        query=" (min-width: 768px) and (max-width: 1279px)"
+        render={() => {
+          return (
+            <Box
+              display="flex"
+              flexDirection={['column', 'column', 'row']}
+              alignItems="center"
+              width={[0, 330, 550]}
+              gridGap={[0, 20]}
+            >
+              <ImgAbout src={first} alt="" />
+              <ImgAbout src={second} alt="" />
+            </Box>
+          );
+        }}
+      />
+      <Media
+        query="(min-width: 1280px)"
+        render={() => {
+          return (
+            <Box
+              display="flex"
+              flexDirection={['column', 'column', 'row']}
+              alignItems="center"
+              width={[0, 330, 550]}
+              gridGap={[0, 20]}
+            >
+              <ImgAbout src={desk} alt="" />
+              <ImgAbout src={deskSec} alt="" />
+            </Box>
+          );
+        }}
+      />
       <Box
         display="flex"
         flexDirection="column"

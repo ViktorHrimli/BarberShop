@@ -15,19 +15,7 @@ export const BorderAboutText = styled.p`
   text-transform: uppercase;
 `;
 
-export const ImgAbout = styled.img`
-  display: none;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: block;
-  }
-`;
-
-export const ImgAboutDesktop = styled.img`
-  display: none;
-  @media screen and (min-width: 1280px) {
-    display: block;
-  }
-`;
+export const ImgAbout = styled.img``;
 
 export const AboutTitle = styled.h2`
   width: 330px;

@@ -4,7 +4,9 @@ import { About } from './About/About';
 import { Price } from './Price/Price';
 import { Stats } from './Stat/Stat';
 import { Masters } from './Masters/Masters';
+import { Gallery } from './Gallery/Gallery';
 import { card } from 'components';
+import masters from '../masters.json';
 export const BarberShop = () => {
   return (
     <Box
@@ -31,17 +33,8 @@ export const BarberShop = () => {
         desk={card.priceDeskt}
       />
       <Stats />
-      <Masters
-        mob1={card.fmm}
-        mob2={card.smm}
-        mob3={card.tmm}
-        tab1={card.ftm}
-        tab2={card.stm}
-        tab3={card.ttm}
-        desk1={card.fdm}
-        desk2={card.sdm}
-        desk3={card.tdm}
-      />
+      <Masters masters={masters} />
+      <Gallery mob={card.GMF} tab={card.GTF} desk={card.GDF} />
     </Box>
   );
 };

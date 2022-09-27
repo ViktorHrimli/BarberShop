@@ -5,9 +5,6 @@ export const ListNav = styled.ul`
   align-items: center;
   justify-content: center;
   grid-gap: ${p => p.theme.space[5]}px;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    display: none;
-  }
   @media screen and (min-width: 1280px) {
     grid-gap: ${p => p.theme.space[7]}px;
 
@@ -23,9 +20,6 @@ export const TextNav = styled.p`
   :hover {
     cursor: pointer;
     color: ${p => p.theme.colors.accent};
-  }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    display: none;
   }
 `;
 
@@ -46,8 +40,5 @@ export const ButtonNav = styled.button`
   :hover,
   :focus {
     background: ${p => p.theme.colors.accent};
-  }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    display: none;
   }
 `;

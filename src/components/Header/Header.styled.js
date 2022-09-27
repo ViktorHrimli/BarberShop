@@ -38,13 +38,6 @@ export const LogoImg = styled(FaBtc)`
   color: ${p => p.theme.colors.white};
   margin-right: auto;
   margin-bottom: auto;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: none;
-    color: ${p => p.theme.colors.black};
-  }
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
 `;
 
 export const ButtonStyle = styled(BiListUl)`
@@ -54,10 +47,4 @@ export const ButtonStyle = styled(BiListUl)`
   width: 40px;
   height: 40px;
   color: ${p => p.theme.colors.white};
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: none;
-  }
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
 `;

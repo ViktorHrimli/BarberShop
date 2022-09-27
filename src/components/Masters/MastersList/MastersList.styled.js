@@ -43,6 +43,7 @@ export const Inst = styled(IoLogoInstagram)`
   color: ${p => p.theme.colors.black};
   width: 20px;
   height: 20px;
+  cursor: pointer;
   :hover,
   :focus {
     color: ${p => p.theme.colors.accent};
@@ -52,6 +53,7 @@ export const Facebook = styled(IoLogoFacebook)`
   color: ${p => p.theme.colors.black};
   width: 20px;
   height: 20px;
+  cursor: pointer;
   :hover,
   :focus {
     color: ${p => p.theme.colors.accent};
@@ -61,6 +63,7 @@ export const LinkId = styled(IoLogoLinkedin)`
   color: ${p => p.theme.colors.black};
   width: 20px;
   height: 20px;
+  cursor: pointer;
   :hover,
   :focus {
     color: ${p => p.theme.colors.accent};
@@ -70,6 +73,7 @@ export const Twitter = styled(IoLogoTwitter)`
   color: ${p => p.theme.colors.black};
   width: 20px;
   height: 20px;
+  cursor: pointer;
 
   :hover,
   :focus {

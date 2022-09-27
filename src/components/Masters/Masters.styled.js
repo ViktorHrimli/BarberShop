@@ -4,7 +4,16 @@ export const BorderLineMasters = styled.span`
   display: inline-flex;
   width: 60px;
   border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.black};
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+`;
+export const WtfList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 64px;
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    grid-gap: 30px;
   }
 `;
 
@@ -30,5 +39,6 @@ export const MastersTitle = styled.h2`
     width: 480px;
     line-height: ${p => p.theme.lineHeights.heading};
     font-size: ${p => p.theme.fontSizes.slm};
+    margin-bottom: 44px;
   }
 `;

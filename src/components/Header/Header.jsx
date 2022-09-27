@@ -1,3 +1,4 @@
+import Media from 'react-media';
 import { HeaderStyle, ButtonStyle, LogoImg } from './Header.styled';
 import { Nav } from './Nav/Nav';
 import { Hero } from './Hero/Hero';
@@ -6,7 +7,7 @@ import { Bar } from 'components/Header/Bar/Bar';
 export const Header = ({ mobile, logo, tablet, desktop }) => {
   return (
     <Box display="flex" alignItems="flex-end" width={[480, 768, 1280]}>
-      <Bar />
+      <Media query="(min-width: 768px)" render={() => <Bar />} />
       <HeaderStyle mobile={mobile} tablet={tablet} desktop={desktop}>
         <Box px={[40, 15, 0]} py={[40]}>
           <Box
@@ -15,9 +16,12 @@ export const Header = ({ mobile, logo, tablet, desktop }) => {
             alignItems="center"
             justifyContent="space-between"
           >
-            <Nav />
-            <LogoImg></LogoImg>
-            <ButtonStyle type="button">Burger</ButtonStyle>
+            <Media query="(min-width: 768px)" render={() => <Nav />} />
+            <Media query="(max-width: 767px)" render={() => <LogoImg />} />
+            <Media
+              query="(max-width: 767px)"
+              render={() => <ButtonStyle type="button">Burger</ButtonStyle>}
+            />
           </Box>
           <Hero />
         </Box>

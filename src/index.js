@@ -4,7 +4,6 @@ import { BarberShop } from 'components/App';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'Thema';
 import { GlobalStyle } from 'CommonStyle/Common.styled';
-
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

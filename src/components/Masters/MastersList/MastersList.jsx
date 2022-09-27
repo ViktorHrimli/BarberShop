@@ -1,3 +1,4 @@
+import Media from 'react-media';
 import { Box } from 'CommonStyle/Common.styled';
 import {
   MastersItemsLinks,
@@ -10,132 +11,66 @@ import {
   Twitter,
   ImgMob,
 } from './MastersList.styled';
-export const MastersList = ({
-  mob1,
-  mob2,
-  mob3,
-  tab1,
-  tab2,
-  tab3,
-  desk1,
-  desk2,
-  desk3,
-}) => {
-  return (
-    <Box
-      display="flex"
-      flexDirection={['column', 'column', 'row']}
-      alignItems="center"
-      gridGap={[64, 64, 30]}
-    >
-      <Box
-        display="flex"
-        flexDirection={['column']}
-        justifyContent="center"
-        alignItems="center"
-        gridGap={[30]}
-      >
-        <ImgMob src={[mob1, tab1, desk1]} alt="" />
-
+import { masterCard } from '../index.js';
+export const MastersList = ({ masters }) => {
+  return masters.map((item, indx) => {
+    return (
+      <li key={indx}>
         <Box
           display="flex"
-          flexDirection={['column']}
-          justifyContent="center"
+          flexDirection={['column', 'column', 'row']}
           alignItems="center"
-          gridGap={[3]}
+          gridGap={[64, 64, 30]}
         >
-          <MastersItemsText>John Smith</MastersItemsText>
-          <MastersProf>Extreme Barber</MastersProf>
-        </Box>
-        <Box display="flex" alignItems="center" justifyContent="center">
-          <MastersLinksList>
-            <MastersItemsLinks>
-              <Facebook></Facebook>
-            </MastersItemsLinks>
-            <MastersItemsLinks>
-              <Inst></Inst>
-            </MastersItemsLinks>
-            <MastersItemsLinks>
-              <LinkId></LinkId>
-            </MastersItemsLinks>
-            <MastersItemsLinks>
-              <Twitter></Twitter>
-            </MastersItemsLinks>
-          </MastersLinksList>
-        </Box>
-      </Box>
-      <Box
-        display="flex"
-        flexDirection={['column']}
-        justifyContent="center"
-        alignItems="center"
-        gridGap={[30]}
-      >
-        <ImgMob src={[mob2, tab2, desk2]} alt="" />
+          <Box
+            display="flex"
+            flexDirection={['column']}
+            justifyContent="center"
+            alignItems="center"
+            gridGap={[30]}
+          >
+            <Media
+              query="(max-width: 767px)"
+              render={() => <ImgMob src={masterCard.fmm} />}
+            />
+            <Media
+              query="(min-width: 768px) and (max-width: 1279px)"
+              render={() => <ImgMob src={masterCard.ftm} />}
+            />
+            <Media
+              query="(min-width: 1280px)"
+              render={() => <ImgMob src={masterCard.fdm} />}
+            />
 
-        <Box
-          display="flex"
-          flexDirection={['column']}
-          justifyContent="center"
-          alignItems="center"
-          gridGap={[3]}
-        >
-          <MastersItemsText>John Smith</MastersItemsText>
-          <MastersProf>Extreme Barber</MastersProf>
+            <Box
+              display="flex"
+              flexDirection={['column']}
+              justifyContent="center"
+              alignItems="center"
+              gridGap={[3]}
+            >
+              <MastersItemsText>{item.name}</MastersItemsText>
+              <MastersProf>{item.prof}</MastersProf>
+            </Box>
+            <Box display="flex" alignItems="center" justifyContent="center">
+              <MastersLinksList>
+                <MastersItemsLinks>
+                  <Facebook></Facebook>
+                </MastersItemsLinks>
+                <MastersItemsLinks>
+                  <Inst></Inst>
+                </MastersItemsLinks>
+                <MastersItemsLinks>
+                  <LinkId></LinkId>
+                </MastersItemsLinks>
+                <MastersItemsLinks>
+                  <Twitter></Twitter>
+                </MastersItemsLinks>
+              </MastersLinksList>
+            </Box>
+          </Box>
         </Box>
-        <Box display="flex" alignItems="center" justifyContent="center">
-          <MastersLinksList>
-            <MastersItemsLinks>
-              <Facebook></Facebook>
-            </MastersItemsLinks>
-            <MastersItemsLinks>
-              <Inst></Inst>
-            </MastersItemsLinks>
-            <MastersItemsLinks>
-              <LinkId></LinkId>
-            </MastersItemsLinks>
-            <MastersItemsLinks>
-              <Twitter></Twitter>
-            </MastersItemsLinks>
-          </MastersLinksList>
-        </Box>
-      </Box>
-      <Box
-        display="flex"
-        flexDirection={['column']}
-        justifyContent="center"
-        alignItems="center"
-        gridGap={[30]}
-      >
-        <ImgMob src={[mob3, tab3, desk3]} alt="" />
-
-        <Box
-          display="flex"
-          flexDirection={['column']}
-          justifyContent="center"
-          alignItems="center"
-          gridGap={[3]}
-        >
-          <MastersItemsText>John Smith</MastersItemsText>
-          <MastersProf>Extreme Barber</MastersProf>
-        </Box>
-        <Box display="flex" alignItems="center" justifyContent="center">
-          <MastersLinksList>
-            <MastersItemsLinks>
-              <Facebook></Facebook>
-            </MastersItemsLinks>
-            <MastersItemsLinks>
-              <Inst></Inst>
-            </MastersItemsLinks>
-            <MastersItemsLinks>
-              <LinkId></LinkId>
-            </MastersItemsLinks>
-            <MastersItemsLinks>
-              <Twitter></Twitter>
-            </MastersItemsLinks>
-          </MastersLinksList>
-        </Box>
-      </Box>
-    </Box>
-  );
+      </li>
+    );
+  });
 };

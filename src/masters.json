@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1e0700a2-5183-4291-85cc-2065a036a683",
+    "name": "John Smith",
+    "prof": "Extreme Barber",
+    "mob": "./components/img/MasterFirsMob.jpg",
+    "tab": "./components/img/MasterFirsTab.jpg",
+    "deskt": "./components/img/MFD.jpg"
+  },
+  {
+    "id": "1e0700a2-5183-4291-85cc-2065a036a683",
+    "name": "Michele Doe",
+    "prof": "Extreme Barber",
+    "mob": "./components/img/MasterSecMob.jpg",
+    "tab": "./components/img/MTT.jpg",
+    "deskt": "./components/img/MSD.jpg"
+  },
+  {
+    "id": "1e0700a2-5183-4291-85cc-2065a036a683",
+    "name": "Alan Black",
+    "prof": "Extreme Barber",
+    "mob": "./components/img/MasterThreeMob.jpg",
+    "tab": "./components/img/MThreeTab.jpg",
+    "deskt": "./components/img/MTD.jpg"
+  }
+]
