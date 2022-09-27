@@ -4,7 +4,8 @@ import { Nav } from './Nav/Nav';
 import { Hero } from './Hero/Hero';
 import { Box } from 'CommonStyle/Common.styled';
 import { Bar } from 'components/Header/Bar/Bar';
-export const Header = ({ mobile, logo, tablet, desktop }) => {
+
+export const Header = ({ mobile, tablet, desktop }) => {
   return (
     <Box display="flex" alignItems="flex-end" width={[480, 768, 1280]}>
       <Media query="(min-width: 768px)" render={() => <Bar />} />

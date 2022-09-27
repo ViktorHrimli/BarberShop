@@ -16,12 +16,7 @@ export const BarberShop = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Header
-        mobile={card.mobile}
-        logo={card.logo}
-        tablet={card.heroTab}
-        desktop={card.desk}
-      />
+      <Header mobile={card.mobile} tablet={card.heroTab} desktop={card.desk} />
       <About
         first={card.firstTable}
         second={card.secondTable}
