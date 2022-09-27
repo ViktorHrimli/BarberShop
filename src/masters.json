@@ -3,7 +3,7 @@
     "id": "1e0700a2-5183-4291-85cc-2065a036a683",
     "name": "John Smith",
     "prof": "Extreme Barber",
-    "mob": "./components/img/MasterFirsMob.jpg",
+    "mob": "https://sborodoy.com/sites/default/files/styles/825x500/public/2020-08/%D0%A2%D0%B8%D1%82%D1%83%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE.jpg?itok=Hqkuoreh",
     "tab": "./components/img/MasterFirsTab.jpg",
     "deskt": "./components/img/MFD.jpg"
   },
