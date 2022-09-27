@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/BarberShop/static/css/main.7acaea2f.css",
-    "main.js": "/BarberShop/static/js/main.6feaac19.js",
+    "main.js": "/BarberShop/static/js/main.034258da.js",
     "static/media/PriceTablet.png": "/BarberShop/static/media/PriceTablet.9ad31f84fb1feedacaef.png",
     "static/media/DesktopHero.jpg": "/BarberShop/static/media/DesktopHero.c2f0c7e56a2741f8340e.jpg",
+    "static/media/ContactsMob.jpg": "/BarberShop/static/media/ContactsMob.605f78dc65f13b9733ff.jpg",
     "static/media/destopPrice.jpg": "/BarberShop/static/media/destopPrice.1e6118295b262dc1d015.jpg",
     "static/media/GMF.jpg": "/BarberShop/static/media/GMF.f2fba79b90c39fbfbf85.jpg",
     "static/media/HeroTab.jpg": "/BarberShop/static/media/HeroTab.25b3122ab811a4db9128.jpg",
@@ -25,10 +26,10 @@
     "static/media/About_sec_tablet.jpg": "/BarberShop/static/media/About_sec_tablet.e81d2c8c43c2b6e65bc9.jpg",
     "index.html": "/BarberShop/index.html",
     "main.7acaea2f.css.map": "/BarberShop/static/css/main.7acaea2f.css.map",
-    "main.6feaac19.js.map": "/BarberShop/static/js/main.6feaac19.js.map"
+    "main.034258da.js.map": "/BarberShop/static/js/main.034258da.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.6feaac19.js"
+    "static/js/main.034258da.js"
   ]
 }
