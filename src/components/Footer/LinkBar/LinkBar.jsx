@@ -10,23 +10,18 @@ export const LinkBar = () => {
   return (
     <Box
       display="flex"
-      flexDirection={['column']}
-      alignItems={['center', 'flex-start', 'flex-start']}
-      justifyContent="center"
+      flexDirection={['row']}
+      alignItems={['flex-start', 'flex-start', 'flex-start']}
+      justifyContent={['center', 'space-between']}
       width={[420, 690, 1170]}
       px={[30, 40, 55]}
-      py={[44, 100, 130]}
+      py={[44, 56, 55]}
     >
+      <Box display="flex" alignItems="flex-start" mt={[20, 0]}>
+        <BarLinkCopir>Copyright 2020</BarLinkCopir>
+      </Box>
       <ConteinerBarLink>
-        <Box mt={[20]}>
-          <BarLinkCopir>Copyright 2020</BarLinkCopir>
-        </Box>
-        <Box
-          display="flex"
-          ml={['auto']}
-          alignItems={['flex-start']}
-          gridGap={[20]}
-        >
+        <Box display="flex" ml={[90]} alignItems={['center']} gridGap={[20]}>
           <BorderBarLinks></BorderBarLinks>
           <BarListLink>
             <li>

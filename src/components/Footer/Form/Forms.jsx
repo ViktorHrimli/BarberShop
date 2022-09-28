@@ -22,15 +22,24 @@ export const Forms = () => {
         flexDirection={['column']}
         alignItems={['center', 'flex-start', 'flex-start']}
         justifyContent="center"
-        width={[420, 690, 1170]}
+        width={[420, 690, 530]}
         px={[30, 40, 55]}
         py={[84, 100, 130]}
       >
-        <Box display="flex" flexDirection={['column']} gridGap={[44]}>
+        <Box
+          display="flex"
+          flexDirection={['column']}
+          alignItems={['center', 'flex-start', 'flex-start']}
+          gridGap={[44]}
+        >
           <Box display="flex" justifyContent="center">
             <FormsTitle>Онлайн-запись</FormsTitle>
           </Box>
-          <Box>
+          <Box
+            display="flex"
+            flexDirection={['column']}
+            alignItems={['center', 'flex-start', 'flex-start']}
+          >
             <Formik
               initialValues={{
                 name: '',
@@ -40,12 +49,18 @@ export const Forms = () => {
               onSubmit={onHandleSubmit}
             >
               <FormSubmit>
-                <Lable>
-                  <Input type="text" name="name" placeholder="*Имя" />
-                </Lable>
-                <Lable>
-                  <Input type="tel" name="telephone" placeholder="*Телефон" />
-                </Lable>
+                <Box
+                  display="flex"
+                  flexDirection={['column', 'row', 'row']}
+                  gridGap={[44, 30, 30]}
+                >
+                  <Lable>
+                    <Input type="text" name="name" placeholder="*Имя" />
+                  </Lable>
+                  <Lable>
+                    <Input type="tel" name="telephone" placeholder="*Телефон" />
+                  </Lable>
+                </Box>
                 <Lable>
                   <Message
                     name="message"

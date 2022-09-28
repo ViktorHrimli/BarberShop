@@ -17,7 +17,7 @@ export const FormsTitle = styled.h2`
   letter-spacing: 0.05em;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 500;
+    width: 500px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -32,6 +32,13 @@ export const FormSubmit = styled(Form)`
   align-items: center;
   justify-content: center;
   grid-gap: 44px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1280px) {
+    align-items: flex-start;
+  }
 `;
 
 export const Input = styled(Field)`
@@ -42,6 +49,13 @@ export const Input = styled(Field)`
   border: none;
   border-bottom: ${p => p.theme.borders.normal} rgba(157, 164, 189, 0.4);
   outline: none;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 260px;
+  }
 
   :hover,
   :focus {
@@ -64,6 +78,13 @@ export const Message = styled(Field)`
   outline: none;
   border: none;
   border-bottom: ${p => p.theme.borders.normal} rgba(157, 164, 189, 0.4);
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 690px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+  }
   :hover,
   :focus {
     color: ${p => p.theme.colors.white};

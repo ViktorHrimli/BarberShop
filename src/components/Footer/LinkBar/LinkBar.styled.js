@@ -4,7 +4,6 @@ export const ConteinerBarLink = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   background-color: ${p => p.theme.colors.white};
 `;
 

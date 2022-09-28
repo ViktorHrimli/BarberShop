@@ -17,18 +17,25 @@ export const Contacts = () => {
         flexDirection={['column']}
         alignItems={['center', 'flex-start', 'flex-start']}
         justifyContent="center"
-        width={[420, 690, 1170]}
+        width={[420, 690, 530]}
         px={[30, 40, 55]}
-        py={[24, 100, 130]}
+        py={[84, 100, 130]}
       >
         <Box
           display="flex"
-          flexDirection={['column']}
+          flexDirection={['column', 'row', 'column']}
           alignItems={['center']}
           gridGap={[40]}
         >
-          <ContactTitle>Контакты</ContactTitle>
-          <Box>
+          <Box
+            display="flex"
+            flexDirection={['column']}
+            alignItems={['center', 'flex-start']}
+            ml={[0, 0, 55]}
+            gridGap={[40]}
+          >
+            <ContactTitle>Контакты</ContactTitle>
+
             <ContactsList>
               <li>
                 <Box
@@ -70,7 +77,8 @@ export const Contacts = () => {
             flexDirection="column"
             alignItems="flex-start"
             justifyContent="center"
-            width={[403]}
+            mt={[0, 30, 0]}
+            width={[403, 330, 270]}
             pl={[15]}
             gridGap={[20]}
           >

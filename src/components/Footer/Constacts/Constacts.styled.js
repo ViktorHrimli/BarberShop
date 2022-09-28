@@ -13,6 +13,9 @@ export const ContactsList = styled.ul`
   align-items: flex-start;
   grid-gap: 20px;
   width: 418px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 330px;
+  }
 `;
 
 export const ContactBorderLine = styled.span`
@@ -45,7 +48,10 @@ export const ContactTitle = styled.h2`
   color: ${p => p.theme.colors.white};
   line-height: 49px;
   letter-spacing: 0.05em;
-  @media screen and (min-width: 1280px) {
-    font-size: ${p => p.theme.fontSizes.xxl};
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 15px;
+  }
+  @media screen and (min-width: 1280) {
+    margin-left: 15px;
   }
 `;
