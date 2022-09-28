@@ -1,12 +1,9 @@
 import styled from 'styled-components';
+import { Title } from 'CommonStyle/Common.styled';
 
-export const StatTitle = styled.h2`
+export const StatTitle = styled(Title)`
   width: 330px;
-  font-family: ${p => p.theme.fonts.body};
-  font-size: ${p => p.theme.fontSizes.lx};
   font-weight: ${p => p.theme.fontWeights.heading};
-  color: ${p => p.theme.colors.black};
-  line-height: ${p => p.theme.lineHeights.heading};
   letter-spacing: 0.05em;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {

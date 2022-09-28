@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Border, ParagraphTitleText } from 'CommonStyle/Common.styled';
 
 export const ConteinerBackGround = styled.div`
   margin-top: 50px;
@@ -36,22 +37,16 @@ export const ListPriceItem = styled.li`
   }
 `;
 
-export const BorderListPrice = styled.span`
-  display: inline-flex;
-  border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.secondary};
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-  }
+export const BorderListPrice = styled(Border)`
+  width: 0;
 `;
 
-export const PriceTitleText = styled.p`
+export const PriceTitleText = styled(ParagraphTitleText)`
   display: inline-flex;
   justify-content: space-between;
   width: 358px;
-  font-family: ${p => p.theme.fonts.heading};
   font-size: ${p => p.theme.fontSizes.s};
-  line-height: 26px;
   letter-spacing: 0.02em;
-  color: ${p => p.theme.colors.text};
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 610px;
     font-size: ${p => p.theme.fontSizes.xsm};

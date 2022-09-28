@@ -1,8 +1,7 @@
 import styled from 'styled-components';
+import { Border, Paragraph } from 'CommonStyle/Common.styled';
 
-export const GalleryBorderLine = styled.span`
-  display: inline-flex;
-  width: 60px;
+export const GalleryBorderLine = styled(Border)`
   border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.black};
 `;
 export const GalleryList = styled.ul`
@@ -23,9 +22,6 @@ export const GalleryList = styled.ul`
   }
 `;
 
-export const GalleryBorderText = styled.p`
-  font-family: ${p => p.theme.fonts.heading};
-  font-size: ${p => p.theme.fontSizes.xs};
+export const GalleryBorderText = styled(Paragraph)`
   color: ${p => p.theme.colors.black};
-  text-transform: uppercase;
 `;

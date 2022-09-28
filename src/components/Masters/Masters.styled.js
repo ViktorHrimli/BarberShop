@@ -1,8 +1,7 @@
 import styled from 'styled-components';
+import { Border, Paragraph, Title } from 'CommonStyle/Common.styled';
 
-export const BorderLineMasters = styled.span`
-  display: inline-flex;
-  width: 60px;
+export const BorderLineMasters = styled(Border)`
   border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.black};
 `;
 export const WtfList = styled.ul`
@@ -17,20 +16,12 @@ export const WtfList = styled.ul`
   }
 `;
 
-export const BorderMastersText = styled.p`
-  font-family: ${p => p.theme.fonts.heading};
-  font-size: ${p => p.theme.fontSizes.xs};
+export const BorderMastersText = styled(Paragraph)`
   color: ${p => p.theme.colors.black};
-  text-transform: uppercase;
 `;
 
-export const MastersTitle = styled.h2`
+export const MastersTitle = styled(Title)`
   width: 330px;
-  font-family: ${p => p.theme.fonts.body};
-  font-size: ${p => p.theme.fontSizes.lx};
-  font-weight: ${p => p.theme.fontWeights.bold};
-  color: ${p => p.theme.colors.black};
-  line-height: ${p => p.theme.lineHeights.heading};
   letter-spacing: 0.05em;
   margin-top: 20px;
   margin-bottom: 20px;

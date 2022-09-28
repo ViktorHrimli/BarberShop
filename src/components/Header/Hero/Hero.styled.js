@@ -1,5 +1,11 @@
 import styled from 'styled-components';
-export const BorderLine = styled.span`
+import {
+  Paragraph,
+  ParagraphTitleText,
+  Border,
+} from 'CommonStyle/Common.styled';
+
+export const BorderLine = styled(Border)`
   display: inline-flex;
   width: 60px;
   border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.secondary};
@@ -7,11 +13,8 @@ export const BorderLine = styled.span`
   }
 `;
 
-export const HeaderText = styled.p`
-  font-family: ${p => p.theme.fonts.heading};
-  font-size: ${p => p.theme.fontSizes.xs};
+export const HeaderText = styled(Paragraph)`
   margin-left: ${p => p.theme.space[5]}px;
-  color: ${p => p.theme.colors.secondary};
 `;
 
 export const HeaderTitle = styled.h1`
@@ -29,18 +32,13 @@ export const HeaderTitle = styled.h1`
   }
 `;
 
-export const HeaderTitleText = styled.p`
+export const HeaderTitleText = styled(ParagraphTitleText)`
   width: 306px;
-  font-family: ${p => p.theme.fonts.heading};
-  font-size: ${p => p.theme.fontSizes.xsm};
-  line-height: 26px;
   letter-spacing: 0.02em;
   margin-top: 20px;
-  color: ${p => p.theme.colors.text};
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 350px;
   }
-
   @media screen and (min-width: 1280px) {
     width: 398px;
   }

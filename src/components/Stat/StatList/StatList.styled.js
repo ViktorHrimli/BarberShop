@@ -32,15 +32,6 @@ export const StatsNumber = styled.span`
   line-height: ${p => p.theme.lineHeights.heading};
 `;
 
-// export const Plus = styled.span`
-//   position: absolute;
-//   top: 20px;
-//   right: 62px;
-//   font-size: ${p => p.theme.fontSizes.m};
-//   color: ${p => p.theme.colors.accent};
-//   line-height: ${p => p.theme.lineHeights.heading};
-// `;
-
 export const TextStat = styled.p`
   font-size: ${p => p.theme.fontSizes.s};
   color: ${p => p.theme.colors.black};

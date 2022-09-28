@@ -1,5 +1,6 @@
 import { Form, Field } from 'formik';
 import styled from 'styled-components';
+import { Title, Button } from 'CommonStyle/Common.styled';
 
 export const ConteinerBg = styled.div`
   display: block;
@@ -8,12 +9,8 @@ export const ConteinerBg = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 `;
-export const FormsTitle = styled.h2`
-  font-family: ${p => p.theme.fonts.body};
-  font-size: ${p => p.theme.fontSizes.lx};
-  font-weight: ${p => p.theme.fontWeights.body};
+export const FormsTitle = styled(Title)`
   color: ${p => p.theme.colors.white};
-  line-height: ${p => p.theme.lineHeights.heading};
   letter-spacing: 0.05em;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -92,22 +89,6 @@ export const Message = styled(Field)`
   }
 `;
 
-export const ButtonSubmitForm = styled.button`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: ${p => p.theme.fontSizes.s};
+export const ButtonSubmitForm = styled(Button)`
   padding: 12px 38px;
-  background: transparent;
-  color: ${p => p.theme.colors.white};
-  border-radius: ${p => p.theme.radii.m};
-  letter-spacing: 0.1em;
-  outline: none;
-  border: ${p => p.theme.borders.normal} ${p => p.theme.colors.accent};
-  cursor: pointer;
-
-  :hover,
-  :focus {
-    background: ${p => p.theme.colors.accent};
-  }
 `;

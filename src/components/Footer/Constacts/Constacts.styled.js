@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
+import { SiGooglemaps } from 'react-icons/si';
 
 export const BackgroundConstacts = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -48,10 +50,23 @@ export const ContactTitle = styled.h2`
   color: ${p => p.theme.colors.white};
   line-height: 49px;
   letter-spacing: 0.05em;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-left: 15px;
-  }
-  @media screen and (min-width: 1280) {
-    margin-left: 15px;
-  }
+`;
+export const IconsMap = styled(SiGooglemaps)`
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: ${p => p.theme.colors.text};
+`;
+
+export const IconsPhone = styled(AiOutlinePhone)`
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: ${p => p.theme.colors.text};
+`;
+export const IconsMail = styled(AiOutlineMail)`
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: ${p => p.theme.colors.text};
 `;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Button } from 'CommonStyle/Common.styled';
 
 export const ListNav = styled.ul`
   display: flex;
@@ -23,22 +24,4 @@ export const TextNav = styled.p`
   }
 `;
 
-export const ButtonNav = styled.button`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: ${p => p.theme.fontSizes.s};
-  padding: 12px 20px;
-  background: transparent;
-  color: ${p => p.theme.colors.white};
-  border-radius: ${p => p.theme.radii.m};
-  letter-spacing: 0.1em;
-  outline: none;
-  border: ${p => p.theme.borders.normal} ${p => p.theme.colors.accent};
-  cursor: pointer;
-
-  :hover,
-  :focus {
-    background: ${p => p.theme.colors.accent};
-  }
-`;
+export const ButtonNav = styled(Button)``;

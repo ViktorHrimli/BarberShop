@@ -6,6 +6,9 @@ import {
   ContactText,
   ContactTitle,
   ContactsList,
+  IconsMail,
+  IconsPhone,
+  IconsMap,
 } from './Constacts.styled';
 import bgContacts from '../../img/ContactsMob.jpg';
 
@@ -44,7 +47,7 @@ export const Contacts = () => {
                   justifyContent="flex-start"
                   gridGap={15}
                 >
-                  <span></span>
+                  <IconsMap></IconsMap>
                   <ContactText>ул. Васильковая, 7А, Киев, 08132</ContactText>
                 </Box>
               </li>
@@ -55,7 +58,7 @@ export const Contacts = () => {
                   justifyContent="flex-start"
                   gridGap={15}
                 >
-                  <span></span>
+                  <IconsPhone></IconsPhone>
                   <ContactText>+38 044 111 11 11</ContactText>
                 </Box>
               </li>
@@ -66,7 +69,7 @@ export const Contacts = () => {
                   justifyContent="flex-start"
                   gridGap={15}
                 >
-                  <span></span>
+                  <IconsMail></IconsMail>
                   <ContactText>barbershop@email.com</ContactText>
                 </Box>
               </li>
@@ -75,11 +78,11 @@ export const Contacts = () => {
           <Box
             display="flex"
             flexDirection="column"
-            alignItems="flex-start"
+            alignItems={['flex-start']}
             justifyContent="center"
-            mt={[0, 30, 0]}
-            width={[403, 330, 270]}
-            pl={[15]}
+            mt={[0, 0, 0]}
+            width={[403, 330, 350]}
+            pl={[0, 0, 0]}
             gridGap={[20]}
           >
             <Box

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { FaBtc } from 'react-icons/fa';
-
+import { Border } from 'CommonStyle/Common.styled';
 export const BarList = styled.ul`
   color: ${p => p.theme.colors.black};
   display: flex;
@@ -18,11 +18,9 @@ export const BarLogo = styled(FaBtc)`
   color: ${p => p.theme.colors.black};
 `;
 
-export const BorderBar = styled.span`
-  display: inline-flex;
+export const BorderBar = styled(Border)`
   margin-bottom: 20px;
   rotate: 90deg;
-  width: 60px;
   border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.black};
 `;
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Paragraph, Border } from 'CommonStyle/Common.styled';
 
 export const ConteinerBarLink = styled.div`
   display: flex;
@@ -15,14 +16,11 @@ export const BarListLink = styled.ul`
   grid-gap: 40px;
 `;
 
-export const BarLinkCopir = styled.p`
-  font-size: ${p => p.theme.fontSizes.xs};
+export const BarLinkCopir = styled(Paragraph)`
   line-height: ${p => p.theme.lineHeights.heading};
   color: ${p => p.theme.colors.text};
 `;
 
-export const BorderBarLinks = styled.span`
-  display: inline-flex;
-  width: 60px;
+export const BorderBarLinks = styled(Border)`
   border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.black};
 `;
