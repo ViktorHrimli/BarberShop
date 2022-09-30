@@ -19,6 +19,7 @@ export const Masters = ({ masters }) => {
       px={[30, 40, 55]}
       py={[84, 100, 130]}
       background="#f7f7f7"
+      name="scroll--masters"
     >
       <Box
         display="flex"

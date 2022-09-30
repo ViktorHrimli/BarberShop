@@ -20,6 +20,7 @@ export const About = ({ first, second, desk, deskSec }) => {
       px={[30, 40, 55]}
       py={[84, 100, 139]}
       gridGap={[0, 40]}
+      name="scroll--about"
     >
       <Media
         query=" (min-width: 768px) and (max-width: 1279px)"

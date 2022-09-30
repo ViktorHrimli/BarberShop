@@ -37,7 +37,7 @@ export const Contacts = () => {
             ml={[0, 0, 55]}
             gridGap={[40]}
           >
-            <ContactTitle>Контакты</ContactTitle>
+            <ContactTitle name="scroll--contact">Контакты</ContactTitle>
 
             <ContactsList>
               <li>

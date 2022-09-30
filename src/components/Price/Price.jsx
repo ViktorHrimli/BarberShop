@@ -15,6 +15,7 @@ export const Price = ({ mob, tab, desk }) => {
       alignItems="center"
       flexDirection="column"
       width={[480, 768, 1280]}
+      name="scroll--price"
     >
       <BoxPrice mob={mob} tab={tab} desk={desk}>
         <Box
