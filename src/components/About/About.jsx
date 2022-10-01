@@ -1,4 +1,6 @@
 import Media from 'react-media';
+import { animateScroll as scroll } from 'react-scroll';
+
 import { Box } from 'CommonStyle/Common.styled';
 import {
   BorderLineAbout,
@@ -84,7 +86,14 @@ export const About = ({ first, second, desk, deskSec }) => {
           волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
           приходит!
         </AboutText>
-        <ButtonAbout type="button">Онлайн запись</ButtonAbout>
+        <ButtonAbout
+          onClick={e => {
+            scroll.scrollToBottom();
+          }}
+          type="button"
+        >
+          Онлайн запись
+        </ButtonAbout>
       </Box>
     </Box>
   );

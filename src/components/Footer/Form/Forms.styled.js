@@ -59,6 +59,9 @@ export const Input = styled(Field)`
     color: ${p => p.theme.colors.white};
     border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.white};
   }
+  :focus::placeholder {
+    opacity: 0;
+  }
 `;
 
 export const Lable = styled.label`
@@ -86,6 +89,9 @@ export const Message = styled(Field)`
   :focus {
     color: ${p => p.theme.colors.white};
     border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.white};
+  }
+  :focus::placeholder {
+    opacity: 0;
   }
 `;
 

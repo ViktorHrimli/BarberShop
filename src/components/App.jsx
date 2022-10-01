@@ -6,7 +6,6 @@ import { Stats } from './Stat/Stat';
 import { Masters } from './Masters/Masters';
 import { Gallery } from './Gallery/Gallery';
 import { card } from 'components';
-import masters from '../masters.json';
 import { Footer } from './Footer/Footer';
 export const BarberShop = () => {
   return (
@@ -29,8 +28,8 @@ export const BarberShop = () => {
         desk={card.priceDeskt}
       />
       <Stats />
-      <Masters masters={masters} />
-      <Gallery mob={card.GMF} tab={card.GTF} desk={card.GDF} />
+      <Masters />
+      <Gallery />
       <Footer />
     </Box>
   );

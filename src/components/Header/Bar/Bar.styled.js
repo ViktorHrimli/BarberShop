@@ -28,4 +28,9 @@ export const ItemBar = styled.li`
   margin-top: 40px;
 
   rotate: 270deg;
+
+  :hover {
+    cursor: pointer;
+    color: ${p => p.theme.colors.accent};
+  }
 `;

@@ -4,6 +4,7 @@ import {
   BorderBarLinks,
   ConteinerBarLink,
   BarLinkCopir,
+  BarListItemLink,
 } from './LinkBar.styled';
 
 export const LinkBar = () => {
@@ -24,12 +25,12 @@ export const LinkBar = () => {
         <Box display="flex" ml={[90]} alignItems={['center']} gridGap={[20]}>
           <BorderBarLinks></BorderBarLinks>
           <BarListLink>
-            <li>
+            <BarListItemLink>
               <p>Instagram</p>
-            </li>
-            <li>
+            </BarListItemLink>
+            <BarListItemLink>
               <p>Youtube</p>
-            </li>
+            </BarListItemLink>
           </BarListLink>
         </Box>
       </ConteinerBarLink>

@@ -1,3 +1,5 @@
+import { animateScroll as scroll } from 'react-scroll';
+
 import { Box } from 'CommonStyle/Common.styled';
 import {
   BoxPrice,
@@ -29,7 +31,14 @@ export const Price = ({ mob, tab, desk }) => {
         </Box>
         <PriceTitle>Услуги и цены</PriceTitle>
         <ListPriceComp />
-        <PriceButton type="button">Онлайн-запись</PriceButton>
+        <PriceButton
+          onClick={e => {
+            scroll.scrollToBottom();
+          }}
+          type="button"
+        >
+          Онлайн-запись
+        </PriceButton>
       </BoxPrice>
     </Box>
   );
