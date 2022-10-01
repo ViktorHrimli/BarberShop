@@ -1,4 +1,5 @@
 import { Box } from 'CommonStyle/Common.styled';
+import { cardContext } from './Context/context';
 import { Header } from './Header/Header';
 import { About } from './About/About';
 import { Price } from './Price/Price';
@@ -15,22 +16,15 @@ export const BarberShop = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Header mobile={card.mobile} tablet={card.heroTab} desktop={card.desk} />
-      <About
-        first={card.firstTable}
-        second={card.secondTable}
-        desk={card.cardOne}
-        deskSec={card.cardSec}
-      />
-      <Price
-        mob={card.priceMob}
-        tab={card.priceTablet}
-        desk={card.priceDeskt}
-      />
-      <Stats />
-      <Masters />
-      <Gallery />
-      <Footer />
+      <cardContext.Provider value={card}>
+        <Header />
+        <About />
+        <Price />
+        <Stats />
+        <Masters />
+        <Gallery />
+        <Footer />
+      </cardContext.Provider>
     </Box>
   );
 };

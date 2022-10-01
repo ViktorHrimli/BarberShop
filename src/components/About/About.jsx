@@ -1,7 +1,8 @@
+import { useContext } from 'react';
 import Media from 'react-media';
 import { animateScroll as scroll } from 'react-scroll';
-
 import { Box } from 'CommonStyle/Common.styled';
+import { cardContext } from 'components/Context/context';
 import {
   BorderLineAbout,
   BorderAboutText,
@@ -12,7 +13,8 @@ import {
   ImgAbout,
 } from './About.styled';
 
-export const About = ({ first, second, desk, deskSec }) => {
+export const About = () => {
+  const authContext = useContext(cardContext);
   return (
     <Box
       display="flex"
@@ -35,8 +37,8 @@ export const About = ({ first, second, desk, deskSec }) => {
               width={[0, 330, 550]}
               gridGap={[0, 20]}
             >
-              <ImgAbout src={first} alt="" />
-              <ImgAbout src={second} alt="" />
+              <ImgAbout src={authContext.firstTable} alt="" />
+              <ImgAbout src={authContext.secondTable} alt="" />
             </Box>
           );
         }}
@@ -52,8 +54,8 @@ export const About = ({ first, second, desk, deskSec }) => {
               width={[0, 330, 550]}
               gridGap={[0, 20]}
             >
-              <ImgAbout src={desk} alt="" />
-              <ImgAbout src={deskSec} alt="" />
+              <ImgAbout src={authContext.cardOne} alt="" />
+              <ImgAbout src={authContext.cardSec} alt="" />
             </Box>
           );
         }}

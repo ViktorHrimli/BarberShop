@@ -1,5 +1,5 @@
 import { animateScroll as scroll } from 'react-scroll';
-
+import { cardContext } from 'components/Context/context';
 import { Box } from 'CommonStyle/Common.styled';
 import {
   BoxPrice,
@@ -10,7 +10,10 @@ import {
 } from './Price.styled';
 
 import { ListPriceComp } from './ListPrice/ListPriceItem';
-export const Price = ({ mob, tab, desk }) => {
+import { useContext } from 'react';
+export const Price = () => {
+  const authContext = useContext(cardContext);
+
   return (
     <Box
       display="flex"
@@ -19,7 +22,11 @@ export const Price = ({ mob, tab, desk }) => {
       width={[480, 768, 1280]}
       name="scroll--price"
     >
-      <BoxPrice mob={mob} tab={tab} desk={desk}>
+      <BoxPrice
+        mob={authContext.priceMob}
+        tab={authContext.priceTablet}
+        desk={authContext.priceDeskt}
+      >
         <Box
           display="flex"
           justifyContent="center"
