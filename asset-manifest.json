@@ -1,35 +1,44 @@
 {
   "files": {
     "main.css": "/BarberShop/static/css/main.7acaea2f.css",
-    "main.js": "/BarberShop/static/js/main.fa57c275.js",
+    "main.js": "/BarberShop/static/js/main.ae8c4bad.js",
     "static/media/PriceTablet.png": "/BarberShop/static/media/PriceTablet.9ad31f84fb1feedacaef.png",
     "static/media/DesktopHero.jpg": "/BarberShop/static/media/DesktopHero.c2f0c7e56a2741f8340e.jpg",
     "static/media/ContactsMob.jpg": "/BarberShop/static/media/ContactsMob.605f78dc65f13b9733ff.jpg",
     "static/media/destopPrice.jpg": "/BarberShop/static/media/destopPrice.1e6118295b262dc1d015.jpg",
     "static/media/GMF.jpg": "/BarberShop/static/media/GMF.f2fba79b90c39fbfbf85.jpg",
     "static/media/HeroTab.jpg": "/BarberShop/static/media/HeroTab.25b3122ab811a4db9128.jpg",
+    "static/media/GMT.jpg": "/BarberShop/static/media/GMT.7ec9b97656e2b73a5f2d.jpg",
     "static/media/GTF.jpg": "/BarberShop/static/media/GTF.1e339478ce16aa7c4361.jpg",
+    "static/media/GTT.jpg": "/BarberShop/static/media/GTT.c2d080affac88e062741.jpg",
     "static/media/GDF.jpg": "/BarberShop/static/media/GDF.01613b6490d342c5c5b0.jpg",
+    "static/media/GMFour.jpg": "/BarberShop/static/media/GMFour.d72405abaae8bb4d850d.jpg",
     "static/media/MasterFirsTab.jpg": "/BarberShop/static/media/MasterFirsTab.c8956e34ef8729312ac7.jpg",
+    "static/media/GMS.jpg": "/BarberShop/static/media/GMS.a6e0a9399b661c6c2bfa.jpg",
     "static/media/Mobile.jpg": "/BarberShop/static/media/Mobile.e7350cc59789205ad9ef.jpg",
     "static/media/MasterFirsMob.jpg": "/BarberShop/static/media/MasterFirsMob.c90c61486136abdc29ee.jpg",
     "static/media/About_desktop_sec.jpg": "/BarberShop/static/media/About_desktop_sec.c3fee3857773ac1eb933.jpg",
+    "static/media/DeskGalerThree.jpg": "/BarberShop/static/media/DeskGalerThree.13478caeda68718eb235.jpg",
     "static/media/MasterSecMob.jpg": "/BarberShop/static/media/MasterSecMob.fd244afd37bf18cecb9a.jpg",
     "static/media/MFD.jpg": "/BarberShop/static/media/MFD.58aa5050a496b1cbb975.jpg",
     "static/media/MThreeTab.jpg": "/BarberShop/static/media/MThreeTab.ac170713d358efea9a18.jpg",
+    "static/media/DeskGalerFourjpg.jpg": "/BarberShop/static/media/DeskGalerFourjpg.c34769ada91cde56569d.jpg",
+    "static/media/GTFour.jpg": "/BarberShop/static/media/GTFour.a546fc427688dfd228f7.jpg",
     "static/media/MSD.jpg": "/BarberShop/static/media/MSD.5c19a848b2d219759b5e.jpg",
+    "static/media/GTS.jpg": "/BarberShop/static/media/GTS.f20bfeea3d219361faee.jpg",
     "static/media/MasterThreeMob.jpg": "/BarberShop/static/media/MasterThreeMob.5a7461fa154144ffff3d.jpg",
     "static/media/priceMobile.jpg": "/BarberShop/static/media/priceMobile.7f6c2333aa931dc799d3.jpg",
     "static/media/MTD.jpg": "/BarberShop/static/media/MTD.1102bd3cb4b1369d2de8.jpg",
     "static/media/About_one_tablet.jpg": "/BarberShop/static/media/About_one_tablet.b0ddd90af03a720a9fc2.jpg",
+    "static/media/DeskGalerSec.jpg": "/BarberShop/static/media/DeskGalerSec.a08d21af90bb1f8205dd.jpg",
     "static/media/About_desktop_fir.jpg": "/BarberShop/static/media/About_desktop_fir.bf19ed5f65f6b8d0dee4.jpg",
     "static/media/About_sec_tablet.jpg": "/BarberShop/static/media/About_sec_tablet.e81d2c8c43c2b6e65bc9.jpg",
     "index.html": "/BarberShop/index.html",
     "main.7acaea2f.css.map": "/BarberShop/static/css/main.7acaea2f.css.map",
-    "main.fa57c275.js.map": "/BarberShop/static/js/main.fa57c275.js.map"
+    "main.ae8c4bad.js.map": "/BarberShop/static/js/main.ae8c4bad.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.fa57c275.js"
+    "static/js/main.ae8c4bad.js"
   ]
 }
