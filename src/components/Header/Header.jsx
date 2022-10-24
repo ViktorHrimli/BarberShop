@@ -4,13 +4,13 @@ import img_2 from '../img/ContactsMob.jpg';
 import img_3 from '../img/DeskGalerThree.jpg';
 import img_4 from '../img/GMF.jpg';
 import img_5 from '../img/GMT.jpg';
-import { cardContext } from 'components/Context/context';
+// import { cardContext } from 'components/Context/context';
 import { HeaderStyle, ButtonStyle, LogoImg } from './Header.styled';
 import { Nav } from './Nav/Nav';
 import { Hero } from './Hero/Hero';
 import { Box } from 'CommonStyle/Common.styled';
 import { Bar } from 'components/Header/Bar/Bar';
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const Header = () => {
   const images = [img_1, img_2, img_3, img_4, img_5];
