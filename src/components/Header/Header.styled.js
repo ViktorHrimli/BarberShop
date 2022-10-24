@@ -9,7 +9,10 @@ export const HeaderStyle = styled.header`
     align-items: flex-start;
     justify-content: flex-start;
     height: 580px;
-    background-image: url(${p => p.mobile});
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(${p => p.mobile});
+    background-repeat: no-repeat;
+
     background-position: center;
     background-size: cover;
   }
@@ -20,12 +23,20 @@ export const HeaderStyle = styled.header`
     margin-top: 10px;
     margin-left: auto;
     margin-right: 40px;
-    background-image: url(${p => p.tablet});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+      url(${p => p.tablet});
   }
   @media screen and (min-width: 1280px) {
     width: 1068px;
     height: 680px;
-    background-image: url(${p => p.desktop});
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+      url(${p => p.desktop});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-left: auto;
     margin-right: 40px;
   }
