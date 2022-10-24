@@ -14,9 +14,9 @@ export const Masters = ({ masters }) => {
       flexDirection={['column']}
       alignItems={['center', 'center', 'flex-start']}
       justifyContent="center"
-      width={[420, 690, 1170]}
+      width={[350, 690, 1170]}
       gridGap={[0, 0, 0]}
-      px={[30, 40, 55]}
+      px={[20, 40, 55]}
       py={[84, 100, 130]}
       background="#f7f7f7"
       name="scroll--masters"
@@ -25,7 +25,7 @@ export const Masters = ({ masters }) => {
         display="flex"
         alignItems="center"
         justifyContent="flex-start"
-        width={[420, 330, 500]}
+        width={[330, 330, 500]}
         gridGap={[20]}
       >
         <BorderLineMasters></BorderLineMasters>

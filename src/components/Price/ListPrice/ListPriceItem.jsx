@@ -14,8 +14,8 @@ export const ListPriceComp = () => {
         display="flex"
         flexDirection={['column', 'column', 'row']}
         alignItems={['flex-start']}
-        width={[400, 690, 1170]}
-        mt={[30]}
+        width={[350, 690, 1170]}
+        mt={[20]}
         mb={[30]}
         px={[0]}
         gridGap={[20]}
@@ -23,7 +23,7 @@ export const ListPriceComp = () => {
         <Box
           display="flex"
           flexDirection="column"
-          width={[400, 690, 1170]}
+          width={[350, 690, 1170]}
           px={[0]}
           py={[0]}
         >
@@ -56,7 +56,7 @@ export const ListPriceComp = () => {
         <Box
           display="flex"
           flexDirection="column"
-          width={[400, 690, 1170]}
+          width={[350, 690, 1170]}
           px={[0]}
           py={[0]}
         >

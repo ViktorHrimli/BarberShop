@@ -14,7 +14,7 @@ export const ConteinerStat = styled.div`
   width: 134px;
   justify-content: center;
   align-items: center;
-  padding: 20px 32px;
+  padding: 20px 20px;
   background-color: ${p => p.theme.colors.background};
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding: 20px 40px;

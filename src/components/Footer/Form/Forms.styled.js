@@ -39,7 +39,7 @@ export const FormSubmit = styled(Form)`
 `;
 
 export const Input = styled(Field)`
-  width: 418px;
+  width: 360px;
   padding-bottom: 8px;
   background-color: transparent;
   color: rgba(157, 164, 189, 0.4);
@@ -71,7 +71,7 @@ export const Lable = styled.label`
 `;
 
 export const Message = styled(Field)`
-  width: 418px;
+  width: 350px;
   padding-bottom: 65px;
   color: rgba(157, 164, 189, 0.4);
   background-color: transparent;

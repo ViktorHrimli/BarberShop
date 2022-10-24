@@ -22,8 +22,8 @@ export const Forms = () => {
         flexDirection={['column']}
         alignItems={['center', 'flex-start', 'flex-start']}
         justifyContent="center"
-        width={[420, 690, 530]}
-        px={[30, 40, 55]}
+        width={[350, 690, 530]}
+        px={[20, 40, 55]}
         py={[84, 100, 130]}
       >
         <Box

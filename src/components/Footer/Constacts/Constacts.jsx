@@ -20,8 +20,8 @@ export const Contacts = () => {
         flexDirection={['column']}
         alignItems={['center', 'flex-start', 'flex-start']}
         justifyContent="center"
-        width={[420, 690, 530]}
-        px={[30, 40, 55]}
+        width={[350, 690, 530]}
+        px={[20, 40, 55]}
         py={[84, 100, 130]}
       >
         <Box
@@ -81,7 +81,7 @@ export const Contacts = () => {
             alignItems={['flex-start']}
             justifyContent="center"
             mt={[0, 0, 0]}
-            width={[403, 330, 350]}
+            width={[330, 330, 350]}
             pl={[0, 0, 0]}
             gridGap={[20]}
           >

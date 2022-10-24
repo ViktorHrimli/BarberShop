@@ -14,6 +14,10 @@ export const ListPriceConteiner = styled.ul`
   align-items: flex-start;
   grid-gap: 20px;
 
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    padding: 0;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding: 0 40px;
   }
@@ -24,10 +28,14 @@ export const ListPriceConteiner = styled.ul`
 `;
 
 export const ListPriceItem = styled.li`
-  width: 358px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+
+  @media screen and (min-width: 421px) and (max-width: 768px) {
+    padding: 5px;
+    width: 300px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 610px;
   }
@@ -44,9 +52,17 @@ export const BorderListPrice = styled(Border)`
 export const PriceTitleText = styled(ParagraphTitleText)`
   display: inline-flex;
   justify-content: space-between;
-  width: 358px;
+  /* width: 358px; */
   font-size: ${p => p.theme.fontSizes.s};
   letter-spacing: 0.02em;
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    padding: 5px;
+    width: 340px;
+  }
+  @media screen and (min-width: 421px) and (max-width: 767px) {
+    padding: 5px;
+    width: 358px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 610px;
     font-size: ${p => p.theme.fontSizes.xsm};

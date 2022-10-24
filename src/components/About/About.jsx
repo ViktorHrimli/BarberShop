@@ -20,8 +20,8 @@ export const About = () => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      width={[420, 688, 1170]}
-      px={[30, 40, 55]}
+      width={[350, 688, 1170]}
+      px={[20, 40, 55]}
       py={[84, 100, 139]}
       gridGap={[0, 40]}
       name="scroll--about"
@@ -70,7 +70,7 @@ export const About = () => {
           display="flex"
           alignItems="center"
           justifyContent="flex-start"
-          width={[420, 330, 500]}
+          width={[330, 330, 500]}
           gridGap={[20]}
         >
           <BorderLineAbout></BorderLineAbout>

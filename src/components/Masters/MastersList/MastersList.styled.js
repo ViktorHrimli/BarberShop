@@ -7,6 +7,7 @@ import {
 } from 'react-icons/io';
 
 export const ImgMob = styled.img`
+  width: 390px;
   display: block;
 `;
 

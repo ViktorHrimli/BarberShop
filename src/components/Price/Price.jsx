@@ -19,7 +19,7 @@ export const Price = () => {
       display="flex"
       alignItems="center"
       flexDirection="column"
-      width={[480, 768, 1280]}
+      width={[350, 768, 1280]}
       name="scroll--price"
     >
       <BoxPrice

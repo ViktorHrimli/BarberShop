@@ -4,6 +4,7 @@ import {
   GalleryBorderLine,
   GalleryBorderText,
   GalleryList,
+  ImgGallery,
 } from './Gallery.styled';
 import { galleryCard } from './index';
 export const Gallery = () => {
@@ -13,15 +14,15 @@ export const Gallery = () => {
       flexDirection={['column']}
       alignItems={['center', 'flex-start', 'flex-start']}
       justifyContent="center"
-      width={[420, 690, 1170]}
-      px={[30, 40, 55]}
+      width={[350, 690, 1170]}
+      px={[20, 40, 55]}
       py={[84, 100, 130]}
     >
       <Box
         display="flex"
         alignItems="center"
         justifyContent="flex-start"
-        width={[420, 330, 500]}
+        width={[330, 330, 500]}
         gridGap={[20]}
       >
         <GalleryBorderLine></GalleryBorderLine>
@@ -33,7 +34,7 @@ export const Gallery = () => {
         <li>
           <Media
             query="(max-width: 767px)"
-            render={() => <img src={galleryCard.GMF} alt="" />}
+            render={() => <ImgGallery src={galleryCard.GMF} alt="" />}
           />
           <Media
             query="(min-width: 768px) and (max-width: 1279px)"
@@ -47,7 +48,7 @@ export const Gallery = () => {
         <li>
           <Media
             query="(max-width: 767px)"
-            render={() => <img src={galleryCard.GMS} alt="" />}
+            render={() => <ImgGallery src={galleryCard.GMS} alt="" />}
           />
           <Media
             query="(min-width: 768px) and (max-width: 1279px)"
@@ -61,7 +62,7 @@ export const Gallery = () => {
         <li>
           <Media
             query="(max-width: 767px)"
-            render={() => <img src={galleryCard.GMT} alt="" />}
+            render={() => <ImgGallery src={galleryCard.GMT} alt="" />}
           />
           <Media
             query="(min-width: 768px) and (max-width: 1279px)"
@@ -75,7 +76,7 @@ export const Gallery = () => {
         <li>
           <Media
             query="(max-width: 767px)"
-            render={() => <img src={galleryCard.GMFour} alt="" />}
+            render={() => <ImgGallery src={galleryCard.GMFour} alt="" />}
           />
           <Media
             query="(min-width: 768px) and (max-width: 1279px)"

@@ -14,9 +14,9 @@ export const Stats = () => {
       flexDirection={['column', 'column', 'row-reverse']}
       alignItems="center"
       justifyContent="center"
-      width={[400, 690, 1170]}
+      width={[350, 690, 1170]}
       gridGap={[0, 0, 130]}
-      px={[30, 40, 55]}
+      px={[20, 40, 55]}
       py={[84, 100, 130]}
     >
       <Box

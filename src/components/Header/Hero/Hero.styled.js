@@ -9,8 +9,6 @@ export const BorderLine = styled(Border)`
   display: inline-flex;
   width: 60px;
   border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.secondary};
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-  }
 `;
 
 export const HeaderText = styled(Paragraph)`

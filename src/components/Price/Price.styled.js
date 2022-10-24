@@ -5,8 +5,7 @@ export const BoxPrice = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 420px;
-  padding: 84px 30px;
+  padding: 84px 20px;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(${p => p.mob});

@@ -10,16 +10,16 @@ import { useContext } from 'react';
 export const Header = () => {
   const authContext = useContext(cardContext);
   return (
-    <Box display="flex" alignItems="flex-end" width={[480, 768, 1280]}>
+    <Box display="flex" alignItems="flex-end" width={['auto', 768, 1280]}>
       <Media query="(min-width: 768px)" render={() => <Bar />} />
       <HeaderStyle
         mobile={authContext.mobile}
         tablet={authContext.heroTab}
         desktop={authContext.desk}
       >
-        <Box px={[40, 15, 0]} py={[40]}>
+        <Box px={[20, 15, 0]} py={[40]}>
           <Box
-            width={[400, 550, 1070]}
+            width={[350, 550, 1070]}
             display="flex"
             alignItems="center"
             justifyContent="space-between"

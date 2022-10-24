@@ -4,8 +4,6 @@ export const BorderLineAbout = styled.span`
   display: inline-flex;
   width: 60px;
   border-bottom: ${p => p.theme.borders.normal} ${p => p.theme.colors.black};
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-  }
 `;
 
 export const BorderAboutText = styled.p`
@@ -49,11 +47,12 @@ export const AboutTitleText = styled.p`
 `;
 
 export const AboutText = styled.p`
-  width: 400px;
+  width: 320px;
   font-family: ${p => p.theme.fonts.heading};
   font-size: ${p => p.theme.fontSizes.s};
   color: ${p => p.theme.colors.primary};
   line-height: ${p => p.theme.lineHeights.body};
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 330px;
   }

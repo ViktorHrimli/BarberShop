@@ -22,6 +22,9 @@ export const GalleryList = styled.ul`
   }
 `;
 
+export const ImgGallery = styled.img`
+  width: 390px;
+`;
 export const GalleryBorderText = styled(Paragraph)`
   color: ${p => p.theme.colors.black};
 `;

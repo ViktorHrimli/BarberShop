@@ -14,7 +14,7 @@ export const ContactsList = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   grid-gap: 20px;
-  width: 418px;
+  width: 350px;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 330px;
   }
