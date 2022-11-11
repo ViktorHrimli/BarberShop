@@ -14,8 +14,10 @@ export const ConteinerStat = styled.div`
   width: 134px;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px;
+  padding: 10px;
   background-color: ${p => p.theme.colors.background};
+  z-index: -1;
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding: 20px 40px;
     width: 130px;
@@ -26,6 +28,18 @@ export const ConteinerStat = styled.div`
   }
 `;
 
+export const Plus = styled.span`
+  position: absolute;
+  top: 10%;
+  right: 27%;
+  color: orange;
+  height: 1rem;
+  width: 1rem;
+`;
+export const NewPlus = styled(Plus)`
+  top: 10%;
+  right: 20%;
+`;
 export const StatsNumber = styled.span`
   font-size: ${p => p.theme.fontSizes.slm};
   color: ${p => p.theme.colors.black};

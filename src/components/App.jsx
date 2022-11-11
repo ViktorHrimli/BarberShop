@@ -8,6 +8,7 @@ import { Masters } from './Masters/Masters';
 import { Gallery } from './Gallery/Gallery';
 import { card } from 'components';
 import { Footer } from './Footer/Footer';
+import { ButtonScrool } from './ButtonScrool/ButtonScrool';
 export const BarberShop = () => {
   return (
     <Box
@@ -17,6 +18,7 @@ export const BarberShop = () => {
       justifyContent="center"
     >
       <cardContext.Provider value={card}>
+        <ButtonScrool />
         <Header />
         <About />
         <Price />

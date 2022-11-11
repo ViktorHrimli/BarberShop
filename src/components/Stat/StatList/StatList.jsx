@@ -4,6 +4,8 @@ import {
   ConteinerStat,
   StatsNumber,
   TextStat,
+  Plus,
+  NewPlus,
 } from './StatList.styled';
 
 export const StatList = () => {
@@ -13,6 +15,7 @@ export const StatList = () => {
         <ListConteinerStats>
           <li>
             <ConteinerStat>
+              <Plus>+</Plus>
               <StatsNumber>60</StatsNumber>
               <TextStat>Довольных клиентов в день</TextStat>
             </ConteinerStat>
@@ -20,6 +23,7 @@ export const StatList = () => {
 
           <li>
             <ConteinerStat>
+              <Plus>+</Plus>
               <StatsNumber>20</StatsNumber>
               <TextStat>Лучших мастеров Киева </TextStat>
             </ConteinerStat>
@@ -30,12 +34,14 @@ export const StatList = () => {
         <ListConteinerStats>
           <li>
             <ConteinerStat>
+              <Plus>+</Plus>
               <StatsNumber>50</StatsNumber>
               <TextStat>Наград за отличный сервис </TextStat>
             </ConteinerStat>
           </li>
           <li>
             <ConteinerStat>
+              <NewPlus>+</NewPlus>
               <StatsNumber>100</StatsNumber>
               <TextStat>Подарков постоянным клиентам</TextStat>
             </ConteinerStat>
