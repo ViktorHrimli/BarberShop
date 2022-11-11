@@ -22,7 +22,7 @@ export const Contacts = () => {
         justifyContent="center"
         width={[350, 690, 530]}
         px={[20, 40, 55]}
-        py={[84, 100, 130]}
+        py={[84, 100, 142]}
       >
         <Box
           display="flex"
