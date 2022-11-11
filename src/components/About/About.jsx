@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import Media from 'react-media';
-import { animateScroll as scroll } from 'react-scroll';
+import { scroller } from 'react-scroll';
 import { Box } from 'CommonStyle/Common.styled';
 import { cardContext } from 'components/Context/context';
 import {
@@ -90,7 +90,11 @@ export const About = () => {
         </AboutText>
         <ButtonAbout
           onClick={e => {
-            scroll.scrollToBottom();
+            scroller.scrollTo('scroll--form', {
+              duration: 800,
+              delay: 0,
+              smooth: 'easeInOutQuart',
+            });
           }}
           type="button"
         >

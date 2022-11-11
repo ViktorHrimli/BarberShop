@@ -1,4 +1,4 @@
-import { animateScroll as scroll } from 'react-scroll';
+import { scroller } from 'react-scroll';
 import { cardContext } from 'components/Context/context';
 import { Box } from 'CommonStyle/Common.styled';
 import {
@@ -40,7 +40,11 @@ export const Price = () => {
         <ListPriceComp />
         <PriceButton
           onClick={e => {
-            scroll.scrollToBottom();
+            scroller.scrollTo('scroll--form', {
+              duration: 800,
+              delay: 0,
+              smooth: 'easeInOutQuart',
+            });
           }}
           type="button"
         >

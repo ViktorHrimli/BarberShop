@@ -14,9 +14,9 @@ export const Masters = ({ masters }) => {
       flexDirection={['column']}
       alignItems={['center', 'center', 'flex-start']}
       justifyContent="center"
-      width={[350, 690, 1170]}
+      width={[390, 690, 1170]}
       gridGap={[0, 0, 0]}
-      px={[20, 40, 55]}
+      px={[0, 40, 55]}
       py={[84, 100, 130]}
       background="#f7f7f7"
       name="scroll--masters"

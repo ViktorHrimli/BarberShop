@@ -4,6 +4,7 @@ import { FaBtc } from 'react-icons/fa';
 
 export const HeaderStyle = styled.header`
   @media screen and (min-width: 320px) and (max-width: 767px) {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -12,7 +13,6 @@ export const HeaderStyle = styled.header`
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url(${p => p.mobile});
     background-repeat: no-repeat;
-
     background-position: center;
     background-size: cover;
   }
@@ -40,6 +40,8 @@ export const HeaderStyle = styled.header`
     margin-left: auto;
     margin-right: 40px;
   }
+
+  transition: background-image 250ms, cubic-bezier(0.075, 0.82, 0.165, 1);
 `;
 
 export const LogoImg = styled(FaBtc)`

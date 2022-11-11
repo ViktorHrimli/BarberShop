@@ -1,4 +1,4 @@
-import { Events, animateScroll as scroll, scroller } from 'react-scroll';
+import { Events, scroller } from 'react-scroll';
 import { Box } from 'CommonStyle/Common.styled';
 import { useEffect } from 'react';
 import { ListNav, TextNav, ButtonNav } from './Nav.styled';
@@ -14,10 +14,6 @@ export const Nav = () => {
     };
   });
 
-  const scrollToBottom = () => {
-    scroll.scrollToBottom();
-  };
-
   const scrollTo = name => {
     scroller.scrollTo(name, {
       duration: 800,
@@ -28,12 +24,18 @@ export const Nav = () => {
   const navPageClick = event => {
     event.preventDefault();
     if (event.currentTarget.name === 'button') {
-      return scrollToBottom();
+      return scrollTo('scroll--form');
     }
     scrollTo(event.currentTarget.type);
   };
   return (
-    <Box display="flex" mt={[0, 13]} gridGap={[0, 55, 0]} alignItems="baseline">
+    <Box
+      display="flex"
+      flexDirection={['column', 'row', 'row']}
+      mt={[0, 13]}
+      gridGap={[0, 55, 0]}
+      alignItems="baseline"
+    >
       <Box>
         <ListNav>
           <li>
@@ -62,7 +64,7 @@ export const Nav = () => {
         display="flex"
         flexDirection={['row', 'column', 'row-reverse']}
         ml={[0, 0, 258]}
-        gridGap={[0, 20, 40]}
+        gridGap={[20, 20, 40]}
         alignItems="center"
       >
         <ButtonNav onClick={navPageClick} type="button" name="button">

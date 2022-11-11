@@ -6,6 +6,12 @@ export const ListNav = styled.ul`
   align-items: center;
   justify-content: center;
   grid-gap: ${p => p.theme.space[5]}px;
+  @media screen and (max-width: 767px) {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   @media screen and (min-width: 1280px) {
     grid-gap: ${p => p.theme.space[7]}px;
 

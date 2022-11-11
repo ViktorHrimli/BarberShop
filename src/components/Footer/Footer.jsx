@@ -6,7 +6,11 @@ import { LinkBar } from './LinkBar/LinkBar';
 export const Footer = () => {
   return (
     <Box>
-      <Box display="flex" flexDirection={['column', 'column', 'row']}>
+      <Box
+        display="flex"
+        alignItems="center"
+        flexDirection={['column', 'column', 'row']}
+      >
         <Forms />
         <Contacts />
       </Box>

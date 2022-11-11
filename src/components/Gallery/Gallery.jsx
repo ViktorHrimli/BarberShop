@@ -14,8 +14,8 @@ export const Gallery = () => {
       flexDirection={['column']}
       alignItems={['center', 'flex-start', 'flex-start']}
       justifyContent="center"
-      width={[350, 690, 1170]}
-      px={[20, 40, 55]}
+      width={[390, 690, 1170]}
+      px={[0, 40, 55]}
       py={[84, 100, 130]}
     >
       <Box
